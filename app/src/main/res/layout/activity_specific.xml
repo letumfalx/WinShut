@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/specific_space_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.09"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/specific_title"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:gravity="center"
+        android:text="Connect to specific computer:"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/specific_address"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="192.168.X.X"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/specific_space_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:layout_weight="0.17" />
+
+    <Button
+        android:id="@+id/specific_connect"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Connect" />
+
+    <Button
+        android:id="@+id/specific_back"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Back" />
+
+</LinearLayout>

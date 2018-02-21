@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/menu_label_sequence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.18"
+        android:gravity="center"
+        android:text="What to do?"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+    <GridLayout
+        android:id="@+id/menu_grid_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/menu_sequence_1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_weight="0.09"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/shutdown" />
+
+        <ImageButton
+            android:id="@+id/menu_sequence_2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/restart"
+            />
+
+        <ImageButton
+            android:id="@+id/menu_sequence_3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/sleep" />
+
+        <ImageButton
+            android:id="@+id/menu_sequence_4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/hibernate" />
+
+        <ImageButton
+            android:id="@+id/menu_sequence_5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/logout" />
+
+        <ImageButton
+            android:id="@+id/menu_sequence_6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/lock" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/menu_label_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16"
+        android:gravity="center"
+        android:text="How to do?"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp" />
+
+    <GridLayout
+        android:id="@+id/menu_grid_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/menu_type_1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_weight="0.07"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/fast" />
+
+        <ImageButton
+            android:id="@+id/menu_type_2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/timed" />
+
+        <ImageButton
+            android:id="@+id/menu_type_3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/scheduled" />
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/menu_sequence"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.20"
+        android:gravity="center"
+        android:text="None"
+        android:textColor="@android:color/background_light"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/menu_execute"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Execute" />
+
+    <Button
+        android:id="@+id/menu_back"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Back" />
+
+</LinearLayout>

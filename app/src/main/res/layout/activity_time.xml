@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/time_title"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:gravity="center"
+        android:text="Set Time"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.00">
+
+        <TextView
+            android:id="@+id/time_hr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99"
+            android:textColor="@android:color/background_light"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/time_label_hr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/time_sep1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textColor="@android:color/background_light"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/time_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99"
+            android:textColor="@android:color/background_light"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/time_label_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/time_sep2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textColor="@android:color/background_light"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/time_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="99"
+            android:textColor="@android:color/background_light"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/time_label_sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/time_set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+</LinearLayout>
